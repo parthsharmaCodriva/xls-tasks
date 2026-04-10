@@ -34,9 +34,7 @@
     padding: 10px;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
-
-}
+    width: 100%;}
 
 .logo-container{
     display: flex;
@@ -191,6 +189,7 @@ th {
     padding: 10px;
     display: flex;
     justify-content: space-around ;
+  
 }
 
 .card{
