@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy & Sell Cars Online | Penny Cars</title>
+    <meta name="description" content="Buy and sell cars easily with Penny Cars. Find new and used cars by budget, brand, and features.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="https://media.istockphoto.com/id/1036660912/vector/auto-service-logo-car-repair-icon-vector.jpg?s=612x612&w=0&k=20&c=nAATsiOyMv5UKUC3T-nIMj-WDou3kSEx1-x2tVHjsaY=" alt="Penny Cars Logo">
+            <span>Penny Cars</span>
+        </div>
+
+        <div class="nav-item-containers">
+            <span>Home</span>
+            <span>About</span>
+            <span>Purchase</span>
+            <span>Sell</span>
+        </div>
+
+        <button type="button">Contact us</button>
+    </nav>
+
+    <main class="main-container">
+        <header>
+            <div class="small-form">
+                <h3>Find your right car</h3>
+
+                <div>
+                    <button type="button">New Car</button>
+                    <button type="button">Used Car</button>
+                </div>
+
+                <div class="flex flex-row align-center">
+                    <div class="flex flex-row">
+                        <label for="budgetOption">By Budget</label>
+                        <input type="radio" value="by_budget" name="by_category" id="budgetOption">
+                    </div>
+
+                    <div class="flex flex-row">
+                        <label for="brandOption">By Brand</label>
+                        <input type="radio" value="by_brand" name="by_category" id="brandOption">
+                    </div>
+                </div>
+
+                <button type="button">Submit</button>
+            </div>
+
+            <div class="main-heading">
+                <h1>Penny Car, go near or far, Drive your dreams, that’s who we are!</h1>
+            </div>
+        </header>
+
+        <section class="carousel">
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6f/ac/d5/6facd5f4d2183deaed6cad63882a4d88.jpg" alt="Car for sale" class="card-image">
+                <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6f/ac/d5/6facd5f4d2183deaed6cad63882a4d88.jpg" alt="Car for sale" class="card-image">
+                <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6f/ac/d5/6facd5f4d2183deaed6cad63882a4d88.jpg" alt="Car for sale" class="card-image">
+                <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/236x/6f/ac/d5/6facd5f4d2183deaed6cad63882a4d88.jpg" alt="Car for sale" class="card-image">
+                <button type="button">Buy Now</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Buy and Sell Car</h2>
+
+            <div class="form-container">
+                <form action="/submit" method="post">
+                    <div class="personal-section">
+                        <h4>Personal Details</h4>
+
+                        <div class="input-container">
+                            <label for="userName">Username</label>
+                            <input type="text" required minlength="5" id="userName" name="user_name">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" required id="email" name="user_email">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="number">Phone No.</label>
+                            <input type="tel" required maxlength="10" id="number" name="phone_number">
+                        </div>
+
+                        <div class="input-container gender-container">
+                            <p>Gender</p>
+
+                            <div class="radio-parent">
+                                <div class="gender-sub-container">
+                                    <label for="male">Male</label>
+                                    <input type="radio" required id="male" value="male" name="gender">
+                                </div>
+
+                                <div class="gender-sub-container">
+                                    <label for="female">Female</label>
+                                    <input type="radio" required id="female" value="female" name="gender">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="address">Address</label>
+                            <textarea name="address" id="address" rows="4" minlength="15" maxlength="50" placeholder="Enter full address"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="more-detail">
+                        <h4>Query Details</h4>
+
+                        <div class="input-container gender-container">
+                            <p>What are you looking for?</p>
+
+                            <div class="radio-parent">
+                                <div class="gender-sub-container">
+                                    <label for="buyCar">Buy Car</label>
+                                    <input type="radio" required id="buyCar" value="buy" name="purpose">
+                                </div>
+
+                                <div class="gender-sub-container">
+                                    <label for="sellCar">Sell Car</label>
+                                    <input type="radio" required id="sellCar" value="sell" name="purpose">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="budget">Budget</label>
+                            <input type="number" required id="budget" name="budget">
+                        </div>
+
+                        <div class="input-container feature-container">
+                            <p>What features do you want?</p>
+
+                            <div class="feature-sub">
+                                <label><input type="checkbox" value="tech" name="feature"> Tech</label>
+                                <label><input type="checkbox" value="comfort" name="feature"> Comfort</label>
+                                <label><input type="checkbox" value="sport" name="feature"> Sport</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="buyDate">When do you want to buy?</label>
+                            <input type="date" id="buyDate" name="buy_date">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="carType">Type</label>
+                            <select name="car_type" id="carType">
+                                <option value="hatchback">Hatchback</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="brand">Brand</label>
+                            <select name="brand" id="brand">
+                                <option value="bmw">BMW</option>
+                                <option value="ford">Ford</option>
+                                <option value="kia">Kia</option>
+                            </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="fileUpload">Could not find? Upload an image instead</label>
+                            <input type="file" id="fileUpload" name="car_image" accept=".png,.jpg,.jpeg">
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="reset" class="btn">Reset</button>
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Penny Cars Pvt. Ltd</p>
+    </footer>
+</body>
+</html>

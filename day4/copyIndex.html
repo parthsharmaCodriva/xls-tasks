@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cars - buy/sell</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+       <h1>Buy and Sell car</h1>
+        <div class="form-container">
+            <form action="submit" method="post">
+                <div class="personal-section">
+                    <h4>Personal Details</h4>
+                    <div class="input-container">
+                        <label for="userName">Username :</label>
+                        <input type="text" required minlength="5" id="userName" name="user_name">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="email">Email :</label>
+                        <input type="email" required id="email" pattern="[^@\s]+@[^@\s]+" name="user_email">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="number">Phone No. :</label>
+                        <input type="tel" required maxlength="10" id="number" name="phone_number">
+                    </div>
+
+                    <div class="input-container gender-container">
+                        <p>Gender</p>
+                    
+                        <div class="radio-parent">
+                          <div class="gender-sub-container">
+                            <label for="gender">Male</label>
+                            <input type="radio" required id="gender" value="male" name="gender">
+                        </div>
+
+                           
+                        <div class="gender-sub-container">
+                            <label for="gender">Female</label>
+                            <input type="radio" required id="gender" value="female" name="gender">
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                <div class="input-container">
+                        <label for="address">Address. :</label>
+                        <textarea name="address" id="address" rows="4" cols="1" minlength="15" maxlength="50">
+                            Enter full address
+                        </textarea>
+                    </div>
+                </div>
+
+                  <div class="more-detail">
+                    <h4>Query Details</h4>
+
+                     <div class="input-container gender-container">
+                        <p>What are you looking for ?</p>
+                    
+                        <div class="radio-parent">
+                          <div class="gender-sub-container">
+                            <label for="buyCar">Buy car</label>
+                            <input type="radio" required id="purpose" value="sell" name="purpose">
+                        </div>
+
+                           
+                        <div class="gender-sub-container">
+                            <label for="sellCar">Sell Car</label>
+                            <input type="radio" required id="purpose" value="buy" name="purpose">
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="input-container">
+                        <label for="budget">Budget:</label>
+                        <input type="number" required  id="budget" name="budget">
+                    </div>
+
+                    <div class="input-container feature-container">
+                        <p>What features do you want?</p>
+                    <div class="feature-sub">
+                        <input type="checkbox" name="" id="" value="tech" name="feature"> <p>Tech</p>
+                        <input type="checkbox" name="" id="" value="comfort" name="feature"> <p>Comfort</p>
+                        <input type="checkbox" name="" id="" value="sport" name="feature"><p>Sport</p>
+                    </div>
+
+                    </div>
+                    
+                    <div class="input-container">
+                        <p>When do you want to buy?</p>
+                        <input type="date" name="" id="">
+
+                    </div>
+
+                <div class="input-container">
+                        <label for="car">Type?</label> 
+                        <select name="carType" id="car">
+                            <option value="hatch-back">Hatch Back</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">Hatch</option>
+                            <option value="tirri">Tirri OP</option>
+                        </select>
+
+                    </div>
+
+                   <div class="input-container">
+                        <label for="car">Brand?</label> 
+                        <select name="carType" id="car">
+                            <option value="bmw">BMW</option>
+                            <option value="ford">FORD</option>
+                            <option value="kia">KIA</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-container">
+                        <label for="">Could not find? Upload an image instead</label>
+                        <input type="file" accept=".png"/>
+                    </div>
+
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn">Reset</button>
+                   
+                    <button class="btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
