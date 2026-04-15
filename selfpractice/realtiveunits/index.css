@@ -1,0 +1,24 @@
+.img{
+
+}
+/* 
+body{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    flex-direction: column;
+    
+} */
+img{
+   width: 100%;
+   max-width: 75%;
+   display:block;
+}
+span{
+    background-color: red;
+    /* width: 200px; */
+    display: block;
+}
